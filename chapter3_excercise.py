@@ -1,13 +1,13 @@
-def solution(A):
-    def getPos(A):
-        #this fucntion return a list containing only ascending positive integers from input list 
+def getPos(A):
+        #this function returns a list containing only ascending positive integers of the input list 
         A = sorted(A)
         Pos_int = []
         for i in A:
             if i>=0:
                 Pos_int.append(i)
         return Pos_int
-    
+
+def solution(A):
     Pos_A = getPos(A)
     if len(Pos_A)==0:
         return 1

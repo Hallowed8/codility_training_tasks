@@ -3,6 +3,7 @@ def countEl(A,max):
     for i in range(len(A)):
         counted[A[i]] +=1
     return counted
+    
 def solution(A, B, m):
     diff = abs(sum(A) - sum(B))
     counted_A = countEl(A,m)

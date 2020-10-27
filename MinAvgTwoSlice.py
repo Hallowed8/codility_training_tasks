@@ -1,5 +1,3 @@
-# you can write to stdout for debugging purposes, e.g.
-# print("this is a debug message")
 def prefixSum(A):
     prefix_sum = [0]
     current_sum = 0

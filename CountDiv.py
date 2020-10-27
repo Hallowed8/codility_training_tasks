@@ -6,11 +6,11 @@ def smallestDiv(A,B,K):
 
 def solution(A, B, K):
     a = smallestDiv(A,B,K)
-    if A == None:
+    if a == None:
         return 0
     else:
         total_div = B//K
-        min_div = (A-1)//K
+        min_div = (a-1)//K
         return total_div-min_div
 
-print(solution(10,54,5))
+print(solution(10,54,1))

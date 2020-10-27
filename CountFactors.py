@@ -8,5 +8,3 @@ def solution(N):
     if i*i ==N:
         num_of_divisors+=1
     return num_of_divisors
-
-print(solution(64))

@@ -9,4 +9,3 @@ def solution(A):
         if diff < min_diff:
             min_diff = diff
     return min_diff
-print(solution([-1000,1000]))
