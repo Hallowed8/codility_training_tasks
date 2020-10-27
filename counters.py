@@ -2,16 +2,16 @@ def solution(N, A):
     counters = [0]*N
     max_counter = 0
     min_counter = 0
-    for idx, a in enumerate(A):
-        if a<=N:
-            if counters[a-1] < min_counter:
-                counters[a-1] = min_counter + 1
+    for idx in range(1,len(A)):
+        if idx <= N:
+            if counters[idx-1] < min_counter:
+                counters[idx-1] = min_counter + 1
             else:
-                counters[a-1] += 1
+                counters[idx-1] += 1
             
-            if counters[a-1] > max_counter:
+            if counters[idx-1] > max_counter:
                 max_counter +=1
-        else :
+        else:
             min_counter = max_counter
     return counters
 

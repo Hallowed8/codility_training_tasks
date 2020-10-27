@@ -26,7 +26,7 @@ def prefixSum(S, char):
     for character in S:
         if character == char:
             current_sum +=  1
-        prefix_sum.append(tmp_sum)
+        prefix_sum.append(current_sum)
     return prefix_sum
 
 print(solution('CAGCCTA', [2, 5, 0], [4, 5, 6]))

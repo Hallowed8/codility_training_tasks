@@ -1,3 +1,8 @@
+'''
+This task is to calculate the number of identicals.
+identical is a pair of indexes of input A array which contain the same value
+'''
+
 def solution(A):
     A = sorted(A)
     counter = 1
@@ -9,6 +14,5 @@ def solution(A):
             identicals  += sum(range(counter))
             counter = 1
     return identicals
-
 
 print(solution([3, 5, 6, 3, 3, 5]))

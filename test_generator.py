@@ -1,1 +1,0 @@
-print(sum([True, False, False, True]))
